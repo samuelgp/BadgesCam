@@ -37,6 +37,7 @@ class BadgesController: UIViewController, UICollectionViewDelegate, UICollection
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         invokeCamera()
+//        self.performSegueWithIdentifier("toCamera", sender: self)
     }
     
     // Camera

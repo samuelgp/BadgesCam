@@ -163,11 +163,77 @@
                     <navigationItem key="navigationItem" title="Badges" id="Q5b-Zv-22u"/>
                     <connections>
                         <outlet property="collectionView" destination="Uui-Ix-PjL" id="CpX-X9-lDd"/>
+                        <segue destination="AH7-Kw-TK8" kind="show" identifier="toCamera" id="2v1-N3-ukh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1159" y="-398"/>
+        </scene>
+        <!--Camera Controller-->
+        <scene sceneID="mk5-OF-jK3">
+            <objects>
+                <viewController id="AH7-Kw-TK8" customClass="CameraController" customModule="Badges" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dor-r3-NMk"/>
+                        <viewControllerLayoutGuide type="bottom" id="R1P-8M-BPJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="huC-tc-WA8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-AF-dal">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4p-2M-9TC">
+                                        <rect key="frame" x="8" y="285" width="92" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.7843137255" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="92" id="e0K-Zn-YIr"/>
+                                            <constraint firstAttribute="height" constant="30" id="gbQ-MW-eWh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="TAKE PHOTO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFC-tk-DhW">
+                                        <rect key="frame" x="8" y="323" width="92" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.51094902440000001" blue="0.2435337601" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="G5Q-lk-aXB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="J4p-2M-9TC" firstAttribute="trailing" secondItem="YFC-tk-DhW" secondAttribute="trailing" id="1IM-d6-30g"/>
+                                    <constraint firstItem="YFC-tk-DhW" firstAttribute="leading" secondItem="EhM-AF-dal" secondAttribute="leadingMargin" id="Acz-Ny-w5w"/>
+                                    <constraint firstItem="J4p-2M-9TC" firstAttribute="leading" secondItem="YFC-tk-DhW" secondAttribute="leading" id="Prh-Rj-gLl"/>
+                                    <constraint firstItem="J4p-2M-9TC" firstAttribute="centerY" secondItem="EhM-AF-dal" secondAttribute="centerY" id="dUl-06-bFv"/>
+                                    <constraint firstItem="YFC-tk-DhW" firstAttribute="top" secondItem="J4p-2M-9TC" secondAttribute="bottom" constant="8" symbolic="YES" id="qkr-vV-vN4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EhM-AF-dal" firstAttribute="leading" secondItem="huC-tc-WA8" secondAttribute="leading" id="LcU-me-6Z4"/>
+                            <constraint firstAttribute="trailing" secondItem="EhM-AF-dal" secondAttribute="trailing" id="cdD-z9-sbw"/>
+                            <constraint firstItem="EhM-AF-dal" firstAttribute="top" secondItem="huC-tc-WA8" secondAttribute="top" id="kj3-Ob-CXX"/>
+                            <constraint firstAttribute="bottom" secondItem="EhM-AF-dal" secondAttribute="bottom" id="m5y-h6-xWA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="EhM-AF-dal" id="gg9-3K-oRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7h-UT-z8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="-398"/>
         </scene>
         <!--Prizes-->
         <scene sceneID="ptB-1m-GQo">

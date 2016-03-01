@@ -20,6 +20,7 @@
 		FF1F1A621C804FB1002F42CB /* AlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A611C804FB1002F42CB /* AlbumController.swift */; };
 		FF1F1A641C805289002F42CB /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A631C805289002F42CB /* AlbumCell.swift */; };
 		FF1F1A661C8053F9002F42CB /* AlbumEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A651C8053F9002F42CB /* AlbumEntry.swift */; };
+		FF1F1A6A1C8597C9002F42CB /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A691C8597C9002F42CB /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FF1F1A611C804FB1002F42CB /* AlbumController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumController.swift; sourceTree = "<group>"; };
 		FF1F1A631C805289002F42CB /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		FF1F1A651C8053F9002F42CB /* AlbumEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumEntry.swift; sourceTree = "<group>"; };
+		FF1F1A691C8597C9002F42CB /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				FF1F1A611C804FB1002F42CB /* AlbumController.swift */,
 				FF1F1A631C805289002F42CB /* AlbumCell.swift */,
 				FF1F1A651C8053F9002F42CB /* AlbumEntry.swift */,
+				FF1F1A691C8597C9002F42CB /* CameraController.swift */,
 			);
 			path = Badges;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				FF1F1A491C800D0E002F42CB /* Badges.xcdatamodeld in Sources */,
 				FF1F1A411C800D0E002F42CB /* AppDelegate.swift in Sources */,
 				FF1F1A601C804C90002F42CB /* AlertUtils.swift in Sources */,
+				FF1F1A6A1C8597C9002F42CB /* CameraController.swift in Sources */,
 				FF1F1A621C804FB1002F42CB /* AlbumController.swift in Sources */,
 				FF1F1A581C801806002F42CB /* BadgesController.swift in Sources */,
 				FF1F1A5C1C80313E002F42CB /* BadgeCell.swift in Sources */,
