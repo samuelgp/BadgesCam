@@ -11,7 +11,6 @@ import UIKit
 class AlbumCell: UICollectionViewCell {
     
     @IBOutlet weak var taskImageView: UIImageView!
-    
-    @IBOutlet weak var rewardImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     
 }

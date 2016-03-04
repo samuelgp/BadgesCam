@@ -11,42 +11,63 @@ import UIKit
 class AlbumController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var albumCollectionView: UICollectionView!
+    @IBOutlet weak var activeButton: UIButton!
+    @IBOutlet weak var completedButton: UIButton!
     
 
-    let albumEntries = [
-        AlbumEntry(task: UIImage(named: "task")!, reward: UIImage(named: "reward")!)
-    ]
+    var completedBadges = [Badge]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBarHidden = true
+        activeButton.layer.borderWidth = 0.7
+        completedButton.layer.borderWidth = 0.7
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return albumEntries.count
+        return completedBadges.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let albumEntry = albumEntries[indexPath.row]
+        let badge = completedBadges[indexPath.row]
         let cell = albumCollectionView.dequeueReusableCellWithReuseIdentifier("albumCell", forIndexPath: indexPath) as! AlbumCell
-        cell.taskImageView.image = albumEntry.task
-        cell.rewardImageView.image = albumEntry.reward
+        cell.taskImageView.image = badge.image
+        cell.titleLabel.text = badge.name
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    @IBAction func activeButtonTapped(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(false)
     }
     
-
-    /*
+    private func getAllImages(badge: Badge) ->[UIImage] {
+        var result = [UIImage]()
+        for checkPoint in badge.checkpoints {
+            for image in checkPoint.images {
+                result.append(image)
+            }
+        }
+        return result
+    }
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let indexPath = albumCollectionView.indexPathForCell(sender as! AlbumCell)!
+        let images = getAllImages(completedBadges[indexPath.row])
+        let albumImagesVC = segue.destinationViewController as! AlbumImagesController
+        albumImagesVC.images = images
+        albumImagesVC.badgeTitle = completedBadges[indexPath.row].name
     }
-    */
 
 }

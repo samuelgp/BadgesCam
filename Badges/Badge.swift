@@ -13,10 +13,23 @@ class Badge {
     
     var name: String
     var image: UIImage
+    var checkpoints = [Checkpoint]()
     
     init(name: String, image: UIImage) {
         self.name = name
         self.image = image
     }
     
+    func addCheckpoint(checkpoint: Checkpoint) {
+        checkpoints.append(checkpoint)
+    }
+    
+    func isActive() ->Bool {
+        for checkpoint in checkpoints {
+            if !checkpoint.isComplete() {
+                return true
+            }
+        }
+        return false
+    }
 }

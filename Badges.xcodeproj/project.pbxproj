@@ -13,7 +13,6 @@
 		FF1F1A4B1C800D0E002F42CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1F1A4A1C800D0E002F42CB /* Assets.xcassets */; };
 		FF1F1A4E1C800D0E002F42CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1F1A4C1C800D0E002F42CB /* LaunchScreen.storyboard */; };
 		FF1F1A581C801806002F42CB /* BadgesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A571C801806002F42CB /* BadgesController.swift */; };
-		FF1F1A5A1C80187F002F42CB /* PrizesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A591C80187F002F42CB /* PrizesController.swift */; };
 		FF1F1A5C1C80313E002F42CB /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A5B1C80313E002F42CB /* BadgeCell.swift */; };
 		FF1F1A5E1C8037A3002F42CB /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A5D1C8037A3002F42CB /* Badge.swift */; };
 		FF1F1A601C804C90002F42CB /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A5F1C804C90002F42CB /* AlertUtils.swift */; };
@@ -21,6 +20,12 @@
 		FF1F1A641C805289002F42CB /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A631C805289002F42CB /* AlbumCell.swift */; };
 		FF1F1A661C8053F9002F42CB /* AlbumEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A651C8053F9002F42CB /* AlbumEntry.swift */; };
 		FF1F1A6A1C8597C9002F42CB /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A691C8597C9002F42CB /* CameraController.swift */; };
+		FF1F1A6C1C88FB7A002F42CB /* CheckpointsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A6B1C88FB7A002F42CB /* CheckpointsController.swift */; };
+		FF1F1A6E1C890BBE002F42CB /* Checkpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A6D1C890BBE002F42CB /* Checkpoint.swift */; };
+		FF1F1A721C892B78002F42CB /* PendingCheckPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A711C892B78002F42CB /* PendingCheckPointCell.swift */; };
+		FF1F1A781C894DF2002F42CB /* CheckpointCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A771C894DF2002F42CB /* CheckpointCollectionCell.swift */; };
+		FF1F1A7A1C896B1A002F42CB /* AlbumImagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A791C896B1A002F42CB /* AlbumImagesController.swift */; };
+		FF1F1A7C1C896B4D002F42CB /* AlbumImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A7B1C896B4D002F42CB /* AlbumImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +37,6 @@
 		FF1F1A4D1C800D0E002F42CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF1F1A4F1C800D0E002F42CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF1F1A571C801806002F42CB /* BadgesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgesController.swift; sourceTree = "<group>"; };
-		FF1F1A591C80187F002F42CB /* PrizesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrizesController.swift; sourceTree = "<group>"; };
 		FF1F1A5B1C80313E002F42CB /* BadgeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
 		FF1F1A5D1C8037A3002F42CB /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		FF1F1A5F1C804C90002F42CB /* AlertUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
@@ -40,6 +44,12 @@
 		FF1F1A631C805289002F42CB /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		FF1F1A651C8053F9002F42CB /* AlbumEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumEntry.swift; sourceTree = "<group>"; };
 		FF1F1A691C8597C9002F42CB /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		FF1F1A6B1C88FB7A002F42CB /* CheckpointsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckpointsController.swift; sourceTree = "<group>"; };
+		FF1F1A6D1C890BBE002F42CB /* Checkpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkpoint.swift; sourceTree = "<group>"; };
+		FF1F1A711C892B78002F42CB /* PendingCheckPointCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingCheckPointCell.swift; sourceTree = "<group>"; };
+		FF1F1A771C894DF2002F42CB /* CheckpointCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckpointCollectionCell.swift; sourceTree = "<group>"; };
+		FF1F1A791C896B1A002F42CB /* AlbumImagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImagesController.swift; sourceTree = "<group>"; };
+		FF1F1A7B1C896B4D002F42CB /* AlbumImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +86,19 @@
 				FF1F1A551C800D6C002F42CB /* Supporting Files */,
 				FF1F1A441C800D0E002F42CB /* Main.storyboard */,
 				FF1F1A5D1C8037A3002F42CB /* Badge.swift */,
+				FF1F1A6D1C890BBE002F42CB /* Checkpoint.swift */,
 				FF1F1A5B1C80313E002F42CB /* BadgeCell.swift */,
 				FF1F1A571C801806002F42CB /* BadgesController.swift */,
-				FF1F1A591C80187F002F42CB /* PrizesController.swift */,
 				FF1F1A5F1C804C90002F42CB /* AlertUtils.swift */,
 				FF1F1A611C804FB1002F42CB /* AlbumController.swift */,
 				FF1F1A631C805289002F42CB /* AlbumCell.swift */,
 				FF1F1A651C8053F9002F42CB /* AlbumEntry.swift */,
 				FF1F1A691C8597C9002F42CB /* CameraController.swift */,
+				FF1F1A6B1C88FB7A002F42CB /* CheckpointsController.swift */,
+				FF1F1A711C892B78002F42CB /* PendingCheckPointCell.swift */,
+				FF1F1A771C894DF2002F42CB /* CheckpointCollectionCell.swift */,
+				FF1F1A791C896B1A002F42CB /* AlbumImagesController.swift */,
+				FF1F1A7B1C896B4D002F42CB /* AlbumImageCell.swift */,
 			);
 			path = Badges;
 			sourceTree = "<group>";
@@ -180,12 +195,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1F1A661C8053F9002F42CB /* AlbumEntry.swift in Sources */,
-				FF1F1A5A1C80187F002F42CB /* PrizesController.swift in Sources */,
+				FF1F1A6C1C88FB7A002F42CB /* CheckpointsController.swift in Sources */,
 				FF1F1A5E1C8037A3002F42CB /* Badge.swift in Sources */,
+				FF1F1A7C1C896B4D002F42CB /* AlbumImageCell.swift in Sources */,
 				FF1F1A491C800D0E002F42CB /* Badges.xcdatamodeld in Sources */,
+				FF1F1A781C894DF2002F42CB /* CheckpointCollectionCell.swift in Sources */,
+				FF1F1A721C892B78002F42CB /* PendingCheckPointCell.swift in Sources */,
 				FF1F1A411C800D0E002F42CB /* AppDelegate.swift in Sources */,
 				FF1F1A601C804C90002F42CB /* AlertUtils.swift in Sources */,
+				FF1F1A6E1C890BBE002F42CB /* Checkpoint.swift in Sources */,
 				FF1F1A6A1C8597C9002F42CB /* CameraController.swift in Sources */,
+				FF1F1A7A1C896B1A002F42CB /* AlbumImagesController.swift in Sources */,
 				FF1F1A621C804FB1002F42CB /* AlbumController.swift in Sources */,
 				FF1F1A581C801806002F42CB /* BadgesController.swift in Sources */,
 				FF1F1A5C1C80313E002F42CB /* BadgeCell.swift in Sources */,
