@@ -32,6 +32,7 @@ class BadgesController: UIViewController, UICollectionViewDelegate, UICollection
         super.viewWillAppear(animated)
         self.navigationController?.navigationBarHidden = true
         populateBadgeStatus()
+        collectionView.reloadData()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -101,7 +102,7 @@ class BadgesController: UIViewController, UICollectionViewDelegate, UICollection
         
         let instrumentCheckpoint = Checkpoint(title: "Play Instrument", repetitions: 1)
         instrumentCheckpoint.addImage(UIImage(named: "instrument")!)
-        let instrumentBadge = Badge(name: "Learn to play an Intrument", image: UIImage(named: "fs-bicycle")!)
+        let instrumentBadge = Badge(name: "Learn to play an Instrument", image: UIImage(named: "fs-bicycle")!)
         instrumentBadge.addCheckpoint(instrumentCheckpoint)
         badges.append(instrumentBadge)
         

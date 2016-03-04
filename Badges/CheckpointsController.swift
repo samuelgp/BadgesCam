@@ -9,7 +9,7 @@
 import UIKit
 import MobileCoreServices
 
-class CheckpointsController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CheckpointsController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var badge: Badge?
     var checkpoints = [Checkpoint]()
@@ -47,6 +47,8 @@ class CheckpointsController: UIViewController, UITableViewDataSource, UITableVie
         checkpoints.appendContentsOf(completedCheckpoints)
     }
     
+    // TableView Methods
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return checkpoints.count
     }
@@ -67,6 +69,11 @@ class CheckpointsController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        guard let tableViewCell = cell as? PendingCheckPointCell else { return }
+        tableViewCell.setCollectionViewDataSourceAndDelegate(self, forRow: indexPath.row)
+    }
+    
     var lastSelectedIndex: Int?
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -74,6 +81,23 @@ class CheckpointsController: UIViewController, UITableViewDataSource, UITableVie
         if !checkpoints[indexPath.row].isComplete() {
             invokeCamera()
         }
+    }
+    
+    // CollectionView Methods
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return checkpoints[collectionView.tag].repetitions
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("checkpointCollectionCell", forIndexPath: indexPath) as! CheckpointCollectionCell
+        if indexPath.row > checkpoints[collectionView.tag].images.count - 1 {
+            cell.imageView.image = UIImage(named: "grey-background")
+        } else {
+            cell.imageView.image = checkpoints[collectionView.tag].images[indexPath.row]
+        }
+        cell.layer.cornerRadius = cell.frame.size.width/2
+        return cell
     }
     
     // Camera
@@ -88,6 +112,8 @@ class CheckpointsController: UIViewController, UITableViewDataSource, UITableVie
             presentViewController(picker, animated: true, completion: nil)
         }
     }
+    
+    // ImagePicker Methods
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)

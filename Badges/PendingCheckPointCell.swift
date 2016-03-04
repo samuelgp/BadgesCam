@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PendingCheckPointCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+class PendingCheckPointCell: UITableViewCell {
     
     var checkPoint: Checkpoint?
     
@@ -19,8 +19,6 @@ class PendingCheckPointCell: UITableViewCell, UICollectionViewDataSource, UIColl
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        collectionView.dataSource = self
-        collectionView.delegate = self
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -29,19 +27,11 @@ class PendingCheckPointCell: UITableViewCell, UICollectionViewDataSource, UIColl
         // Configure the view for the selected state
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (checkPoint?.repetitions)!
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("checkpointCollectionCell", forIndexPath: indexPath) as! CheckpointCollectionCell
-        if (indexPath.row > ((checkPoint?.images.count)! - 1)) {
-            cell.imageView.image = UIImage(named: "grey-background")
-        } else {
-            cell.imageView.image = checkPoint?.images[indexPath.row]
-        }
-        cell.layer.cornerRadius = cell.frame.size.width/2
-        return cell
+    func setCollectionViewDataSourceAndDelegate<D: protocol<UICollectionViewDataSource, UICollectionViewDelegate>>(dataSourceDelegate: D, forRow row: Int) {
+        collectionView.delegate = dataSourceDelegate
+        collectionView.dataSource = dataSourceDelegate
+        collectionView.tag = row
+        collectionView.reloadData()
     }
 
 }
