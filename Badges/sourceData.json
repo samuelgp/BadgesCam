@@ -1,0 +1,1093 @@
+{
+    "appName": "Mission Control",
+    "appTagLine": "Helping Kids and Parents Record Memories Along the Way",
+    "badges": [
+               "anchor",
+               "balloon",
+               "bolt",
+               "feather",
+               "flag",
+               "key",
+               "kite",
+               "mountain",
+               "paw",
+               "plane",
+               "rocket",
+               "silly"
+               ],
+    "users": [
+              {
+              "id": 0,
+              "name": "Madelyn",
+              "color": "#F8C235",
+              "imageUrl": "/images/demo/profile-photos/madelyn.png"
+              },
+              {
+              "id": 1,
+              "name": "Mom",
+              "color": "#9D5AB4",
+              "imageUrl": "/images/demo/profile-photos/mom.png"
+              },
+              {
+              "id": 2,
+              "name": "Bryson",
+              "color": "#00CC76",
+              "imageUrl": "/images/demo/profile-photos/bryson.png"
+              },
+              {
+              "id": 3,
+              "name": "Dad",
+              "color": "#F14539",
+              "imageUrl": "/images/demo/profile-photos/dad.png"
+              }
+              ],
+    "missions": {
+        "active": [
+                   {
+                   "title": "Get a dog",
+                   "numMilestonesCompleted": 4,
+                   "assignedTo": [
+                                  0,
+                                  2,
+                                  3
+                                  ],
+                   "badge": "paw",
+                   "milestones": {
+                   "active": [
+                              {
+                              "title": "Walk Mr. Jackson's dog",
+                              "timesCompleted": 2,
+                              "timesRemaining": 1,
+                              "imageUrls": [
+                                            "walk1",
+                                            "walk2"
+                                            ],
+                              "userIds": [
+                                          0,
+                                          2
+                                          ]
+                              },
+                              {
+                              "title": "House-sit for the Fitzgeralds",
+                              "timesCompleted": 1,
+                              "timesRemaining": 2,
+                              "imageUrls": [
+                                            "house_sit"
+                                            ],
+                              "userIds": [
+                                          2
+                                          ]
+                              },
+                              {
+                              "title": "Prepare the house",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Choose a puppy!",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              }
+                              ],
+                   "completed": [
+                                 {
+                                 "title": "Choose a dog breed",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "breed"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 },
+                                 {
+                                 "title": "Learn what dogs can/can't eat",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "eat"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 }
+                                 ]
+                   }
+                   },
+                   {
+                   "title": "Become a scientist",
+                   "numMilestonesCompleted": 5,
+                   "assignedTo": [
+                                  0,
+                                  2
+                                  ],
+                   "badge": "kite",
+                   "milestones": {
+                   "active": [
+                              {
+                              "title": "Walk on a carton of eggs",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Find out the volume of my lungs",
+                              "timesCompleted": 0,
+                              "timesRemaining": 2,
+                              "imageUrls": [],
+                              "userIds": []
+                              }
+                              ],
+                   "completed": [
+                                 {
+                                 "title": "Make a vinegar volcano",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "volcano"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 },
+                                 {
+                                 "title": "Try the diet coke & mentos experiment",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "coke"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 },
+                                 {
+                                 "title": "Make my own rock candy",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "rock_candy"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 },
+                                 {
+                                 "title": "Make slime",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "slime"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 },
+                                 {
+                                 "title": "Grow rainbow flowers",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "flowers"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 }
+                                 ]
+                   }
+                   },
+                   {
+                   "title": "Explore Florence",
+                   "numMilestonesCompleted": 4,
+                   "assignedTo": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                                  ],
+                   "badge": "balloon",
+                   "milestones": {
+                   "active": [
+                              {
+                              "title": "Find the Statue of David",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Go to the top of the Duomo",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Feed the pigeons",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Choose a favorite ponte",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              }
+                              ],
+                   "completed": [
+                                 {
+                                 "title": "Have an Italian pizza",
+                                 "timesCompleted": 2,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "pizza1",
+                                               "pizza2"
+                                               ],
+                                 "userIds": [
+                                             0,
+                                             2
+                                             ]
+                                 },
+                                 {
+                                 "title": "Order gelato in Italian",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "gelato"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 },
+                                 {
+                                 "title": "Rub a cinghiale statue's nose",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "cinghiale"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 }
+                                 ]
+                   }
+                   },
+                   {
+                   "title": "Learn about dinosaurs",
+                   "numMilestonesCompleted": 4,
+                   "assignedTo": [
+                                  0,
+                                  1,
+                                  2
+                                  ],
+                   "badge": "bolt",
+                   "milestones": {
+                   "active": [
+                              {
+                              "title": "Learn about a dinosaur species",
+                              "timesCompleted": 2,
+                              "timesRemaining": 3,
+                              "imageUrls": [
+                                            "velociraptor",
+                                            "trex"
+                                            ],
+                              "userIds": [
+                                          2,
+                                          0
+                                          ]
+                              },
+                              {
+                              "title": "Invent a prehistoric creature",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Dig for fossils in the park",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": [
+                                          0,
+                                          2
+                                          ]
+                              }
+                              ],
+                   "completed": [
+                                 {
+                                 "title": "Visit the Natural History museum",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "museum"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 },
+                                 {
+                                 "title": "Visit a real dig site",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "digsite"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 }
+                                 ]
+                   }
+                   },
+                   {
+                   "title": "Become an engineer",
+                   "numMilestonesCompleted": 3,
+                   "assignedTo": [
+                                  0,
+                                  3
+                                  ],
+                   "badge": "rocket",
+                   "milestones": {
+                   "active": [
+                              {
+                              "title": "Build a catapult",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Build a balloon-powered car",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              }
+                              ],
+                   "completed": [
+                                 {
+                                 "title": "Build a straw boat",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "boat"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 },
+                                 {
+                                 "title": "Build a parachute for a toy",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "chutes"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 },
+                                 {
+                                 "title": "Design a marble run",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "marble"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 }
+                                 ]
+                   }
+                   },
+                   {
+                   "title": "Teach Mom & Dad something",
+                   "numMilestonesCompleted": 3,
+                   "assignedTo": [
+                                  0,
+                                  2
+                                  ],
+                   "badge": "anchor",
+                   "milestones": {
+                   "active": [
+                              {
+                              "title": "Talk to an expert",
+                              "timesCompleted": 1,
+                              "timesRemaining": 1,
+                              "imageUrls": [
+                                            "expert"
+                                            ],
+                              "userIds": [
+                                          2
+                                          ]
+                              },
+                              {
+                              "title": "Share with the family!",
+                              "timesCompleted": 0,
+                              "timesRemaining": 2,
+                              "imageUrls": [],
+                              "userIds": []
+                              }
+                              ],
+                   "completed": [
+                                 {
+                                 "title": "Choose a cool topic",
+                                 "timesCompleted": 2,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "egypt",
+                                               "pirates"
+                                               ],
+                                 "userIds": [
+                                             0,
+                                             2
+                                             ]
+                                 },
+                                 {
+                                 "title": "Read a book",
+                                 "timesCompleted": 2,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "egypt_book",
+                                               "pirate_book"
+                                               ],
+                                 "userIds": [
+                                             0,
+                                             2
+                                             ]
+                                 }
+                                 ]
+                   }
+                   },
+                   {
+                   "title": "Learn to make films",
+                   "numMilestonesCompleted": 3,
+                   "assignedTo": [
+                                  0
+                                  ],
+                   "badge": "key",
+                   "milestones": {
+                   "active": [
+                              {
+                              "title": "Storyboard a timelapse film",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Make a timelapse film",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              }
+                              ],
+                   "completed": [
+                                 {
+                                 "title": "Create a cardboard phone stand",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "stand"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 },
+                                 {
+                                 "title": "Storyboard a stop animation film",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "stop_board"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 },
+                                 {
+                                 "title": "Make a stop animation film",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "filming"
+                                               ],
+                                 "userIds": [
+                                             0
+                                             ]
+                                 }
+                                 ]
+                   }
+                   },
+                   {
+                   "title": "Exercise your imagination",
+                   "numMilestonesCompleted": 2,
+                   "assignedTo": [
+                                  2
+                                  ],
+                   "badge": "feather",
+                   "milestones": {
+                   "active": [
+                              {
+                              "title": "Write a story",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              },
+                              {
+                              "title": "Draw a dream",
+                              "timesCompleted": 0,
+                              "timesRemaining": 1,
+                              "imageUrls": [],
+                              "userIds": []
+                              }
+                              ],
+                   "completed": [
+                                 {
+                                 "title": "Design a civilization",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "civilization"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 },
+                                 {
+                                 "title": "Keep a dream diary for a week",
+                                 "timesCompleted": 1,
+                                 "timesRemaining": 0,
+                                 "imageUrls": [
+                                               "dream"
+                                               ],
+                                 "userIds": [
+                                             2
+                                             ]
+                                 }
+                                 ]
+                   }
+                   }
+                   ],
+        "completed": [
+                      {
+                      "title": "Go camping",
+                      "numMilestonesCompleted": 8,
+                      "assignedTo": [
+                                     0,
+                                     1,
+                                     2,
+                                     3
+                                     ],
+                      "badge": "mountain",
+                      "mainImageUrl": "fish",
+                      "milestones": {
+                      "active": [],
+                      "completed": [
+                                    {
+                                    "title": "Learn how to set up a tent",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "tent"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Pick a park",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "park"
+                                                  ],
+                                    "userIds": [
+                                                0
+                                                ]
+                                    },
+                                    {
+                                    "title": "Plan out meals",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "food"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Learn how to light a fire",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "fire1",
+                                                  "fire2"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Learn how to fish",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "fish"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Go on a practice hike",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "hike1",
+                                                  "hike2"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    }
+                                    ]
+                      }
+                      },
+                      {
+                      "title": "Become a prankster",
+                      "numMilestonesCompleted": 6,
+                      "assignedTo": [
+                                     0,
+                                     2
+                                     ],
+                      "badge": "silly",
+                      "mainImageUrl": "main",
+                      "milestones": {
+                      "active": [],
+                      "completed": [
+                                    {
+                                    "title": "Glue a coin to the sidewalk",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "coin"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Fake something gross",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "gross"
+                                                  ],
+                                    "userIds": [
+                                                0
+                                                ]
+                                    },
+                                    {
+                                    "title": "Prank someone's food",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "food"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Make a fake sign",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "sign"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    }
+                                    ]
+                      }
+                      },
+                      {
+                      "title": "Learn to make a pasta dinner",
+                      "numMilestonesCompleted": 4,
+                      "assignedTo": [
+                                     2,
+                                     1
+                                     ],
+                      "badge": "paw",
+                      "mainImageUrl": "/images/demo/milestones/pasta/main.jpg",
+                      "milestones": {
+                      "active": [],
+                      "completed": [
+                                    {
+                                    "title": "Learn to set the table",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "set"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Learn about the parts of a healthy meal",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "healthy"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Learn to make pasta",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "healthy"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Learn to make sauce",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "sauce"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Learn to do dishes",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "dishes"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    }
+                                    ]
+                      }
+                      },
+                      {
+                      "title": "Become a game ninja",
+                      "numMilestonesCompleted": 6,
+                      "assignedTo": [
+                                     0,
+                                     1,
+                                     2,
+                                     3
+                                     ],
+                      "badge": "flag",
+                      "mainImageUrl": "/images/demo/milestones/game/main.jpg",
+                      "milestones": {
+                      "active": [],
+                      "completed": [
+                                    {
+                                    "title": "Master Settlers of Catan",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "settlers"
+                                                  ],
+                                    "userIds": [
+                                                1
+                                                ]
+                                    },
+                                    {
+                                    "title": "Master Apples to Apples",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "apples"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Master Blokus",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "blokus"
+                                                  ],
+                                    "userIds": [
+                                                0
+                                                ]
+                                    },
+                                    {
+                                    "title": "Master Guess Who?",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "guess"
+                                                  ],
+                                    "userIds": [
+                                                3
+                                                ]
+                                    },
+                                    {
+                                    "title": "Master Battleship",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "battle"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    }
+                                    ]
+                      }
+                      },
+                      {
+                      "title": "Learn to be a spy",
+                      "numMilestonesCompleted": 3,
+                      "assignedTo": [
+                                     2
+                                     ],
+                      "badge": "plane",
+                      "mainImageUrl": "/images/demo/milestones/spy/main.jpg",
+                      "milestones": {
+                      "active": [],
+                      "completed": [
+                                    {
+                                    "title": "Make a scytale",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "scytale"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Make a cipher",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "cipher"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Write a secret message",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "message"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    }
+                                    ]
+                      }
+                      },
+                      {
+                      "title": "Enter the science fair",
+                      "numMilestonesCompleted": 6,
+                      "assignedTo": [
+                                     0,
+                                     2
+                                     ],
+                      "badge": "bolt",
+                      "mainImageUrl": "/images/demo/milestones/fair/main.jpg",
+                      "milestones": {
+                      "active": [],
+                      "completed": [
+                                    {
+                                    "title": "Choose a project",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "choose"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Do the experiment",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "experiment"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Make a poster",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "poster"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    }
+                                    ]
+                      }
+                      },
+                      {
+                      "title": "Perform at the winter piano recital",
+                      "numMilestonesCompleted": 5,
+                      "assignedTo": [
+                                     2
+                                     ],
+                      "badge": "key",
+                      "mainImageUrl": "/images/demo/milestones/music/main.jpg",
+                      "milestones": {
+                      "active": [],
+                      "completed": [
+                                    {
+                                    "title": "Learn a song",
+                                    "timesCompleted": 3,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "music1",
+                                                  "music2",
+                                                  "music3"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Do a practice recital for Nana",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "play1",
+                                                  "play2"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    }
+                                    ]
+                      }
+                      },
+                      {
+                      "title": "Start a business",
+                      "numMilestonesCompleted": 6,
+                      "assignedTo": [
+                                     0,
+                                     2
+                                     ],
+                      "badge": "rocket",
+                      "mainImageUrl": "/images/demo/milestones/business/main.jpg",
+                      "milestones": {
+                      "active": [],
+                      "completed": [
+                                    {
+                                    "title": "Find something to sell",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "lemons"
+                                                  ],
+                                    "userIds": [
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Design a company name and logo",
+                                    "timesCompleted": 1,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "drawing"
+                                                  ],
+                                    "userIds": [
+                                                0
+                                                ]
+                                    },
+                                    {
+                                    "title": "Try it!",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "stand1",
+                                                  "stand2"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    },
+                                    {
+                                    "title": "Get user feedback",
+                                    "timesCompleted": 2,
+                                    "timesRemaining": 0,
+                                    "imageUrls": [
+                                                  "customer"
+                                                  ],
+                                    "userIds": [
+                                                0,
+                                                2
+                                                ]
+                                    }
+                                    ]
+                      }
+                      }
+                      ]
+    },
+    "activity": [
+                 {
+                 "title": "Agent Madelyn completed a milestone!",
+                 "caption": "Get a dog - Walk Mr. Jackson's dog"
+                 },
+                 {
+                 "title": "Agent Bryson completed a milestone!",
+                 "caption": "Get a dog - Choose a dog breed"
+                 },
+                 {
+                 "title": "Agent Bryson completed a mission!",
+                 "caption": "Learn to ride a bike"
+                 }
+                 ]
+}

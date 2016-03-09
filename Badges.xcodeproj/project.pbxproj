@@ -26,6 +26,9 @@
 		FF1F1A781C894DF2002F42CB /* CheckpointCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A771C894DF2002F42CB /* CheckpointCollectionCell.swift */; };
 		FF1F1A7A1C896B1A002F42CB /* AlbumImagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A791C896B1A002F42CB /* AlbumImagesController.swift */; };
 		FF1F1A7C1C896B4D002F42CB /* AlbumImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A7B1C896B4D002F42CB /* AlbumImageCell.swift */; };
+		FF8476491C8E6C550098658A /* IconsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8476481C8E6C550098658A /* IconsController.swift */; };
+		FF84764D1C8FC1210098658A /* IconCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84764C1C8FC1210098658A /* IconCollectionCell.swift */; };
+		FF84764F1C8FD1780098658A /* sourceData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF84764E1C8FD1780098658A /* sourceData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		FF1F1A771C894DF2002F42CB /* CheckpointCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckpointCollectionCell.swift; sourceTree = "<group>"; };
 		FF1F1A791C896B1A002F42CB /* AlbumImagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImagesController.swift; sourceTree = "<group>"; };
 		FF1F1A7B1C896B4D002F42CB /* AlbumImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImageCell.swift; sourceTree = "<group>"; };
+		FF8476481C8E6C550098658A /* IconsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconsController.swift; sourceTree = "<group>"; };
+		FF84764C1C8FC1210098658A /* IconCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCollectionCell.swift; sourceTree = "<group>"; };
+		FF84764E1C8FD1780098658A /* sourceData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sourceData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 				FF1F1A771C894DF2002F42CB /* CheckpointCollectionCell.swift */,
 				FF1F1A791C896B1A002F42CB /* AlbumImagesController.swift */,
 				FF1F1A7B1C896B4D002F42CB /* AlbumImageCell.swift */,
+				FF8476481C8E6C550098658A /* IconsController.swift */,
+				FF84764C1C8FC1210098658A /* IconCollectionCell.swift */,
+				FF84764E1C8FD1780098658A /* sourceData.json */,
 			);
 			path = Badges;
 			sourceTree = "<group>";
@@ -183,6 +192,7 @@
 			files = (
 				FF1F1A4E1C800D0E002F42CB /* LaunchScreen.storyboard in Resources */,
 				FF1F1A4B1C800D0E002F42CB /* Assets.xcassets in Resources */,
+				FF84764F1C8FD1780098658A /* sourceData.json in Resources */,
 				FF1F1A461C800D0E002F42CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,10 +215,12 @@
 				FF1F1A601C804C90002F42CB /* AlertUtils.swift in Sources */,
 				FF1F1A6E1C890BBE002F42CB /* Checkpoint.swift in Sources */,
 				FF1F1A6A1C8597C9002F42CB /* CameraController.swift in Sources */,
+				FF8476491C8E6C550098658A /* IconsController.swift in Sources */,
 				FF1F1A7A1C896B1A002F42CB /* AlbumImagesController.swift in Sources */,
 				FF1F1A621C804FB1002F42CB /* AlbumController.swift in Sources */,
 				FF1F1A581C801806002F42CB /* BadgesController.swift in Sources */,
 				FF1F1A5C1C80313E002F42CB /* BadgeCell.swift in Sources */,
+				FF84764D1C8FC1210098658A /* IconCollectionCell.swift in Sources */,
 				FF1F1A641C805289002F42CB /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

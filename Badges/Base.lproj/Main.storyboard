@@ -99,6 +99,64 @@
             </objects>
             <point key="canvasLocation" x="1929.5" y="161.5"/>
         </scene>
+        <!--Icons Controller-->
+        <scene sceneID="J8f-3U-H5h">
+            <objects>
+                <viewController id="wrU-5e-kSH" customClass="IconsController" customModule="Badges" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fMO-IQ-mnj"/>
+                        <viewControllerLayoutGuide type="bottom" id="auT-gy-UMF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZIU-qW-XKh">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jd1-ZQ-8qO">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9hE-Fl-bEX">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="iconCell" id="byt-8J-E67" customClass="IconCollectionCell" customModule="Badges" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAx-8c-sda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="lAx-8c-sda" id="WTJ-2V-dhY"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="wrU-5e-kSH" id="kd5-uR-GY2"/>
+                                    <outlet property="delegate" destination="wrU-5e-kSH" id="aXn-El-Edh"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="jd1-ZQ-8qO" id="UzP-PF-GjW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wg3-55-dbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929.5" y="-922.5"/>
+        </scene>
         <!--Badges-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -178,6 +236,7 @@
                         <outlet property="activeButton" destination="cDP-Bk-iDi" id="cF0-AI-6RF"/>
                         <outlet property="collectionView" destination="Uui-Ix-PjL" id="CpX-X9-lDd"/>
                         <outlet property="completedButton" destination="7fR-q0-u4u" id="P0W-yc-zmb"/>
+                        <segue destination="wrU-5e-kSH" kind="showDetail" identifier="toSelectIcon" action="showViewController:sender:" id="Hhu-zJ-hCX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -213,7 +272,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-camera-128" translatesAutoresizingMaskIntoConstraints="NO" id="esY-iV-SRq">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esY-iV-SRq">
                                                     <rect key="frame" x="624" y="4" width="35" height="35"/>
                                                 </imageView>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5wt-oA-uyW">
@@ -408,7 +467,4 @@
             <point key="canvasLocation" x="1224" y="-398"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icon-camera-128" width="128" height="128"/>
-    </resources>
 </document>

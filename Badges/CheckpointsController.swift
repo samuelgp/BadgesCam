@@ -21,7 +21,7 @@ class CheckpointsController: UIViewController, UITableViewDataSource, UITableVie
         self.title = badge?.name
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.translucent = true
+        navigationController?.navigationBar.backgroundColor = UIColor.whiteColor()
         navigationController?.navigationBar.tintColor = UIColor.blackColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blackColor()]
         pendingTableView.dataSource = self
@@ -60,11 +60,12 @@ class CheckpointsController: UIViewController, UITableViewDataSource, UITableVie
         
         if !checkpoint.isComplete() {
             cell.titleLabel.text = "\(checkpoint.title) x \(checkpoint.repetitions)"
+            cell.cameraImage.image = UIImage(named: "icon-camera-128")
         } else {
             let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: checkpoint.title)
             attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
             cell.titleLabel.attributedText = attributeString
-            cell.cameraImage.hidden = true
+            cell.cameraImage.image = UIImage()
         }
         return cell
     }
@@ -106,6 +107,7 @@ class CheckpointsController: UIViewController, UITableViewDataSource, UITableVie
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
             let picker = UIImagePickerController()
             picker.sourceType = .Camera
+            picker.cameraDevice = .Front
             picker.mediaTypes = [kUTTypeImage as String]
             picker.allowsEditing = true
             picker.delegate = self
