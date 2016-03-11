@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6D5E5541C929FB400E85493 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6D5E54A1C929FB400E85493 /* Lato-Bold.ttf */; };
+		F6D5E5551C929FB400E85493 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6D5E54B1C929FB400E85493 /* Lato-BoldItalic.ttf */; };
+		F6D5E5581C929FB400E85493 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6D5E54E1C929FB400E85493 /* Lato-Italic.ttf */; };
+		F6D5E55B1C929FB400E85493 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6D5E5511C929FB400E85493 /* Lato-Regular.ttf */; };
 		FF1F1A411C800D0E002F42CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A401C800D0E002F42CB /* AppDelegate.swift */; };
 		FF1F1A461C800D0E002F42CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1F1A441C800D0E002F42CB /* Main.storyboard */; };
 		FF1F1A491C800D0E002F42CB /* Badges.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1A471C800D0E002F42CB /* Badges.xcdatamodeld */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6D5E54A1C929FB400E85493 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		F6D5E54B1C929FB400E85493 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F6D5E54E1C929FB400E85493 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		F6D5E5511C929FB400E85493 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		FF1F1A3D1C800D0E002F42CB /* Badges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Badges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1F1A401C800D0E002F42CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF1F1A451C800D0E002F42CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +123,10 @@
 		FF1F1A551C800D6C002F42CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F6D5E54A1C929FB400E85493 /* Lato-Bold.ttf */,
+				F6D5E54B1C929FB400E85493 /* Lato-BoldItalic.ttf */,
+				F6D5E54E1C929FB400E85493 /* Lato-Italic.ttf */,
+				F6D5E5511C929FB400E85493 /* Lato-Regular.ttf */,
 				FF1F1A401C800D0E002F42CB /* AppDelegate.swift */,
 				FF1F1A4A1C800D0E002F42CB /* Assets.xcassets */,
 				FF1F1A4C1C800D0E002F42CB /* LaunchScreen.storyboard */,
@@ -190,9 +202,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D5E5541C929FB400E85493 /* Lato-Bold.ttf in Resources */,
 				FF1F1A4E1C800D0E002F42CB /* LaunchScreen.storyboard in Resources */,
 				FF1F1A4B1C800D0E002F42CB /* Assets.xcassets in Resources */,
+				F6D5E5581C929FB400E85493 /* Lato-Italic.ttf in Resources */,
+				F6D5E5551C929FB400E85493 /* Lato-BoldItalic.ttf in Resources */,
 				FF84764F1C8FD1780098658A /* sourceData.json in Resources */,
+				F6D5E55B1C929FB400E85493 /* Lato-Regular.ttf in Resources */,
 				FF1F1A461C800D0E002F42CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
